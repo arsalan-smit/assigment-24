@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body onload="authCheck(); getPost()">
+    <header>
+        <div class="logo">My Blog</div>
+        <nav>
+            <a href="./dashboard.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Welcome to My Blog</h1>
+    </section>
+    <div class="blogCreate">
+        <button class="createBtn" id="createBtn">Create Blog</button>
+    </div>
+    <div class="writeBlogContainer" id="writeBlogContainer">
+        <input type="text" placeholder="Title" id="title">
+        <textarea name="" id="textarea" ></textarea>>
+        <div class="status">
+          <input type="checkbox" id="checkbox" value="private" name="status">
+          <label for="private">Private</label>
+        </div>
+        <button class="saveBtn" id="saveBtn" onclick="postBlog()">Save</button>
+    </div>
+    <main class="container">
+        <div class="post" id="post">
+            <!-- <div class="post-content" id="post-content">
+                <h2 class="post-title">Understanding the Basics of Technology</h2>
+                <p class="post-description">Technology is evolving rapidly, and it has become an integral part of our lives...</p>
+                <button class="editBtn">Edit</button>
+                <button class="deleteBtn">Delete</button>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+    <script type="module" src="dashboard.js"></script>
+</body> 
+</html>

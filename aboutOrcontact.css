@@ -1,0 +1,93 @@
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: rgb(241, 241, 184);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 0.5rem 0 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About Page Specific Styles */
+.about-section {
+    background: #e9f7fe;
+    padding: 1rem;
+    border-left: 4px solid #007BFF;
+}
+
+/* Contact Page Specific Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: #0056b3;
+        transition: background-color 0.3s;
+    }
+}
+
+
